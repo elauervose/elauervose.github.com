@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Carousel Template · Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://twitter.github.io/bootstrap/assets/ico/favicon.png">
+  <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style></head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="index.html">Erica Lauer Vose</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#browse-projects">Projects</a></li>
+                <li><a href="img/erica_lauer_vose_resume_old.pdf" target="_blank">Resume</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item">
+          <img src="img/portland_moss.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Nonprofit Management</h1>
+              <p class="lead">Working within the community, I am constantly reminded that when any one of us is better, we are all better.</p>
+              <a class="btn btn-large btn-success" href="#browse-projects">Browse Projects</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/technology.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Technology</h1>
+              <p class="lead">Technological literacy promotes social justice, supports healthy, vibrant communitites, and empowers nonprofits, communities, and individuals to transform the world.</p>
+              <a class="btn btn-large btn-success" href="#browse-projects">Browse Projects</a>
+            </div>
+          </div>
+        </div>
+        <div class="item active">
+          <img src="img/summer_day.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Storytelling</h1>
+              <p class="lead">Stories have the power to move hearts and minds and transform communities.</p>
+              <a class="btn btn-large btn-success" href="#about">About Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="container marketing">
+      <div class="row marketing" id="about">
+        <br>
+        <br>
+        <div class="span2 offset1">
+        <br>
+          <img class="img-circle" data-src="js/holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="img/erica.jpg"> 
+          <br>
+          <br>
+          <p><em>“You are only limited by your own imagination”</em><br>
+              <a href= "http://piddlypoems.blogspot.com/" target="_blank">~ Benny Bellamacina</a></p>
+        </div>
+        <div class="span5">  
+          <h2>About Me</h2>
+              <!-- <p>I believe in the power of stories to move hearts and minds and transform communities and I believe in the power of communities to transform the world.</p> --> 
+              <p>There is nothing I love more than a juicy, interesting challenge I can dive into. I do my best work when collaborating with others and am able to bring creativity and an interdisciplinary, community-minded approach to the work.</p>   
+              <p>I believe in the communities I serve and the work I do. I am passionate and driven to succeed because I know that when any one of us is better, we are all better.</p> 
+              <p>My areas of expertise and interest are; strategic planning, community outreach, marketing, communications, internet technology, program management, and storytelling.</p>
+        </div>
+        <div class="span2">
+          <br>
+          <br>
+          <h4>Email</h4>
+          <p>elauervose@gmail.com</p>
+
+          <h4>Phone</h4>
+          <p>503.432.1718</p>
+          <h4><a href="img/erica_lauer_vose_resume_old.pdf" target="_blank">Resume</a></h4>
+        </div>
+        <div class="span2" style="text-align:center;">
+          <br>
+          <br>
+          <a href="https://twitter.com/ELauerVose"><img class="img-circle" data-src="js/holder.js/60x60" alt="60x60" style="width: 60px; height: 60px;" src="img/twitter.png"></a>
+          <br>
+          <br>
+          <a href="http://www.linkedin.com/profile/view?id=69116290&trk=nav_responsive_tab_profile"><img class="img-circle" data-src="js/holder.js/60x60" alt="60x60" style="width: 60px; height: 60px;" src="img/linkedin.jpg"></a>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+        </div>
+      </div>
+      <br>
+      <br>
+      <hr>
+      <!-- Three columns of text below the carousel -->
+      <div class="row" id="browse-projects">
+        <div class="span11 offset1">
+          <h2>Projects</h2>
+          <br>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" data-src="js/holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="img/pftp1.jpg">
+          <h2>Marketing</h2><h3>Portland Fruit Tree Project</h3>
+          <p>I produced a short video documenting the Portland Fruit Tree Project's work empowering neighbors to share in the harvest.<br>
+          </p>
+          <p><a class="btn" href="#pftp">More »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="js/holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="img/afppsu_chalk2.jpg">
+          <h2>Communication</h2><h3>AFP-PSU</h3>
+          <p>I designed and implemented a website using DrupalGardens. The content and layout are the result of collaborative user group analysis and user testing.</p>
+          <p><a class="btn" href="#afppsu">More »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="js/holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="img/strategic_plan_diagram.jpg">
+          <h2>Strategic Planning</h2><h3>Oregon Volunteers</h3>
+          <p>I developed a strategic plan to acheive these goals using the strategic goals set by the Oregon State Service Commission for their AmeriCorps federal grant administration organization, Oregon Volunteers.</p>
+          <p><a class="btn" href="#oregon-volunteers">More »</a></p>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+        </div>
+      </div>
+      <div class="row">
+        <br>
+        <br>
+        <div class="span4">
+          <img class="img-circle" data-src="js/holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="img/orange_badge.jpg">
+          <h2>Technology</h2><h3>The Portland Code School</h3>
+          <p>I collaborated with community partners to develop the Portland Code School program. The Portland Code School is a 12-week program designed to produce well-rounded programmers able to excel in a web development career.</p>
+          <p><a class="btn" href="#pcs">More »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="js/holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="img/lion2.jpg">
+          <h2>Fundraising</h2><h3>Chess for Success</h3>
+          <p>I worked with Chess for Success as event coordinator for their annual fundraising auction <em>A Knight to Remember</em> to develop messaging, publications, and other communications and marketing tools and materials.</p>
+          <p><a class="btn" href="#cfs">More »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="js/holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="img/gsosw2.png">
+          <h2>Program</h2><h3>Girl Scouts OSW</h3>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#gsosw">More »</a></p>
+        </div>
+        <br>
+        <br>
+      </div>
+      <div class="row">
+        <br>
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+        </div>
+      </div>
+      <div class="row">
+        <br>
+        <br>
+        <div class="span4">
+          <img class="img-circle" data-src="js/holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="img/americorps-wa-logo.jpg">
+          <h2>Management</h2><h3>Washington Reading Corps</h3>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+          <p><a class="btn" href="#wrc">More »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="js/holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="img/oral_history.jpg">
+          <h2>Oral History</h2><h3>Life History of Winnifred Olson</h3>
+          <p>I conducted a life history of 80 year old, life-long resident of Olympia, Washington Winnifred Olsen.  Six separate interviews were recorded, transcribed, edited, and compiled into a book published by the Olympia Historical Society.</p>
+          <p><a class="btn" href="#oral-history">More »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="js/holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="img/tortillas2.png">
+          <h2>Storytelling</h2><h3>"Tortillas"</h3>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#tortillas">More »</a></p>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+        </div>
+        <br>
+      </div>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+      <div class="featurette" id="pftp">
+        <iframe class="featurette-image pull-right" width="512" height="512" src="http://www.youtube.com/embed/Yt8vnltoZ_Y" frameborder="0" allowfullscreen></iframe>
+        <h2 class="featurette-heading">Marketing, PR, <span class="muted">& Communications</span></h2>
+        <h3>Portland Fruit Tree Project, 2012</h3>
+        <p class="lead">I produced this video for the Portland Fruit Tree Project's <a href="http://www.wweek.com/portland/giveguide">GiveGuide </a>application.</p>
+        <p class="lead">Telling the story of the Portland Fruit Tree Project was a mouth-watering, deliciously sweet summer project. It was so much fun, in fact, I created a second video featuring thier new <a href="http://youtu.be/TSYPm_xL8-8">Bike Powered Harvests »</a></p>
+        <p><a href="http://portlandfruit.org/">Visit The Portland Fruit Tree Project Site »</a></p>
+      </div>
+      <br>
+      <div class="row">
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+          <p><a href="#browse-projects">Back to Projects</a></P>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="featurette">
+        <h2 class="featurette-heading" id="afppsu">Association of Fundraising Professionals <span class="muted">Portland State University</span></h2>
+        <h3>VP of Communication, 2012-2013</h3>
+        <p class="lead">As VP of Communications on the board for the student chapter of the <a href="http://www.afporegon.afpnet.org/content.cfm?ContentItemID=52869&navItemNumber=5318">Association of Fundraising Professionals</a>, I designed and implemented a website using <a href="http://www.drupalgardens.com/">DrupalGardens</a> which ensured future student leaders would be able to maintain the site even if they didn't know how to write code. The content and layout are the result of collaborative user group analysis and testing.</p>
+        <a href="http://afppsu.drupalgardens.com/" target="_blank"><img class="img-rounded" src="img/afppsu_header.jpg"></a></p>
+        <div class="span4 offset6">
+          <p><a href="http://afppsu.drupalgardens.com/" target="_blank"><strong>Visit the Site »</strong></a></p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+          <p><a href="#browse-projects">Back to Projects</a></P>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="oregon-volunteers">
+        <img class="featurette-image pull-right" src="img/strategic_plan_diagram.jpg">
+        <h2 class="featurette-heading">Strategic Planning <span class="muted">Oregon Volunteers</span></h2>
+        <h3>Oregon State Service Commission, 2012 - 2013</h3>
+        <p class="lead"><p class="lead">I developed a strategic plan to acheive goals set by the Oregon State Service Commission for the AmeriCorps federal grant administration organization, <a href="http://www.oregonvolunteers.org/">Oregon Volunteers</a>.</p>
+        <p class="lead">The strategic plan includes a description of necessary leadership development, case studies of potential scenarios, and an organizational capacity assessment. This strategic plan was presented to the Oregon Service Commission who used the scenario case studies to inform their decision-making process.</p>
+        <p><strong>Download strategic planning documents here:</strong></p>
+          <ul>
+            <li><strong><a href="img/executive_summary_strategic_planning_process_oregon_volunteers.pdf" target="_blank">Executive Summary</a></strong></li> 
+
+            <li><strong><a href="img/final_report_strategic_planning_oregon_volunteers.pdf" target="_blank">Final Report</a></strong></li> 
+
+            <li><strong><a href="img/appendix_a_scenario_planning.pdf" target="_blank">Appendix A: Scenario Planning</a></strong></li> 
+
+            <li><strong><a href="img/appendix_b_strategic_planning_phases_and_implementation.pdf" target="_blank">Appendix B: Implementation Phases</a> </strong></li>
+
+            <li><strong><a href="img/appendix_c_recommended_capacity_assessment_tool.pdf" target="_blank">Appendix C: Recommended Capacity Assessment Tool</a></strong> by <a href="http://www.vppartners.org/">Venture Philanthropy Partners</a> </li>
+
+            <li><strong><a href="img/appendix_d_foundation_candidate_analysis.pdf" target="_blank">Appendix D: Foundation Grant Analysis</a></strong></li>
+
+            <li><strong><a href="img/appendix_e_pso_test.pdf" target="_blank">Appendix E: PSO Test Resource</a></strong> from the <a href="http://www.nonprofitoregon.org/helpline_resources/publications">Oregon Nonprofit Handbook</a></li>
+      </div>
+      <br>
+      <div class="row">
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+          <p><a href="#browse-projects">Back to Projects</a></P>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="pcs">
+        <img class="featurette-image pull-left" src="img/orange_badge.jpg">
+        <h2 class="featurette-heading">Technology <span class="muted">The Portland Code School</span></h2>
+        <h3>Director, 2013</h3>
+        <p class="lead"><a href="http://www.portlandcodeschool.com/">Portland Code School</a> is a collaborative program designed to teach passionate, smart, creative people the skills they need to be competent, well-rounded programmers able to excel in a web development career in 12 weeks.</p>
+          <p class="lead"><strong>Check out the folding puzzle. It's a fun toy with a purpose.</strong>
+          <ul>
+            <li><a href="img/folding_puzzle_front_kale&badge.pdf" target="_blank">Folding Puzzle with Kale</a></li>
+            <li><a href="img/pcs_folding_puzzle_harder.pdf" target="_blank">Hard Folding Puzzle</a></li>
+          </ul>
+        </p>
+      </div>
+      <br>
+      <div class="row">
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+          <p><a href="#browse-projects">Back to Projects</a></P>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="cfs">
+        <img class="featurette-image pull-right" src="img/lion2.jpg">
+        <h2 class="featurette-heading">Fundraising <span class="muted">Chess for Success</span></h2>
+        <h3>Event Coordinator, 2013</h3>
+        <p class="lead">I worked with Chess for Success as event coordinator for their annual fundraising auction <em>A Knight to Remember</em> to develop messaging, publications, and other communications and marketing tools and materials. Each of the invitation design samples are used as themes to carry through all other related publications. The 2013 design is my original work depicting a lion chess peice.</p>
+        <p class="lead">I developed and implemented an evaluation plan to analyze the success of the event. The final evaluation resulted in a strategic marketing and stewardship plan.</p>
+        <p><strong>Download sample documents here:</strong> 
+          <ul>
+            <li><a href="img/invitation_design_2013.pdf" target="_blank">Invitation Design 2013</a></li>
+            <li><a href="img/invitation_design_2014.pdf" target="_blank">Invitation Design 2014</a></li>
+            <li><a href="img/strategic_marketing_&_stewardship_plan.pdf" target="_blank">Strategic Marketing and Stewardship Plan</a></li>
+            <li><a href="img/calling_card_data_collection_tool.pdf" target="_blank">Data Collection Tool</a></li>
+          </ul></p>
+      </div>
+      <br>
+      <div class="row">
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+          <p><a href="#browse-projects">Back to Projects</a></P>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="gsosw">
+        <img class="featurette-image pull-left" src="img/gsosw2.png">
+        <h2 class="featurette-heading">Program Management <span class="muted">Girl Scouts of Oregon & SW Washington</span></h2>
+        <h3>Program Specialist, 2010 - 2012</h3>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <br>
+      <div class="row">
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+          <p><a href="#browse-projects">Back to Projects</a></P>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="wrc">
+        <img class="featurette-image pull-right" src="img/americorps-wa-logo.jpg">
+        <h2 class="featurette-heading">AmeriCorps <span class="muted">The Washington Reading Corps</span></h2>
+        <h3>Program Coordinator, 2007 - 2010</h3>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h4>Washington Reading Corps Blog</h4>
+        <p>Something about the Blog & <a hreff="http://cysreadingcorps.wordpress.com/" target="_blank">Visit the Blog »</a></p>
+      </div>
+      <br>
+      <div class="row">
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+          <p><a href="#browse-projects">Back to Projects</a></P>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="oral-history">
+        <img class="featurette-image pull-left" src="img/oral_history.jpg">
+        <h2 class="featurette-heading">Oral History <span class="muted">Olympia Historical Society</span></h2>
+        <h3>Life History of Winnifred Olson, 2006</h3>
+        <p class="lead">I conducted a life history of 80 year old, life-long resident of Olympia, Washington Winnifred Olsen.  Six separate interviews were recorded, transcribed, edited, and compiled into a book published by the Olympia Historical Society. </p><p class="lead">The book can be found at the Washington State library, the University of Washington Library, and the Regional Library.</p>
+          <em><strong><h4>Winnifred Olsen; You’re Making History Now.</h4></strong></em>Edited by Erica Stillman and Lois Fenske.  Olympia: Olympia Historical Society, 2006. <a href="http://www.worldcat.org/title/youre-making-history-now/oclc/71817993" target="_blank">Find the Book »</a></p>
+      </div>
+      <br>
+      <div class="row">
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+          <p><a href="#browse-projects">Back to Projects</a></P>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="tortillas">
+        <iframe class="featurette-image pull-right" width="512" height="512" src="http://www.youtube.com/embed/yRpSexh5gc0" frameborder="0" allowfullscreen></iframe>
+        <h2 class="featurette-heading">Storytelling <span class="muted">"Tortillas"</span></h2>
+        <h3>Oral History, 2005</h3>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <br>
+      <div class="row">
+        <div class="span2 offset10">
+          <p><a href="#top">Back to Top</a></P>
+          <p><a href="#browse-projects">Back to Projects</a></P>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="index.html">Back to top</a></p>
+        <p>© 2013 Erica Lauer Vose <!-- · <a href="index.html">Privacy</a> · <a href="index.html">Terms</a></p>  -->
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="js/holder.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42120994-1', 'elauervose.github.io');
+    ga('send', 'pageview');
+
+  </script>  
+
+</body></html>
