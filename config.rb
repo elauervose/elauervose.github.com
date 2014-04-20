@@ -45,7 +45,7 @@ activate :livereload
 #   end
 # end
 
-activate :directory_indexes
+# activate :directory_indexes
 
 set :build_dir, "tmp"
 
