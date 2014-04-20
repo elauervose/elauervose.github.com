@@ -1,0 +1,61 @@
+Chuck's help
+
+<% wrap_layout :application do %>
+
+  <section id="headline">
+    <div class="container">
+      <h3><%= current_page.data.title %></h3>
+    </div>
+  </section>
+
+  <section class="container page-content">
+
+    <!-- Subtitle -->
+    <% if current_page.data.subtitle %>
+      <div class="eleven columns portfolio-item">
+        <h3><%= current_page.data.subtitle %></h3>
+      </div>
+    <% end %>
+
+    <!-- Main Article -->
+    <section class="eleven columns">
+      <article>
+        <%= yield %>
+      </article>
+    </section><!-- end-of-article -->
+
+    <!-- Sidebar -->
+    <aside class="four columns offset-by-one sidebar">
+      <div class="portfolio-item-detail-box">
+        <% if current_page.data.post_date %>
+          Date: <%= current_page.data.post_date %>
+        <% end %>
+
+        <% if current_page.data.tags %>
+          <hr>
+          <% tag_links = current_page.data.tags.map do |tag|
+            "<a href=\"#\">#{tag}</a>"
+          end %>
+          Cat: <%= tag_links.join(", ") %>
+        <% end %>
+
+        <% if current_page.data.project_links %>
+          <h4 class="subtitle">Project Links</h4>
+          <div class="listbox1">
+            <ul>
+              <% current_page.data.project_links.each do |link| %>
+                <li><a href="#"><%= link %></a></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <br class="clear">
+      </div>
+    </aside><!-- end-sidebar-->
+
+    <hr class="vertical-space2">
+
+  </section><!-- end-content -->
+
+<% end %>
