@@ -2,6 +2,10 @@
 
 source 'http://rubygems.org'
 
+gem "puma"
+
+gem "rack-contrib"
+
 gem "middleman", "~>3.2.0"
 
 # Live-reloading plugin
