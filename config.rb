@@ -45,6 +45,10 @@ activate :livereload
 #   end
 # end
 
+activate :directory_indexes
+
+set :build_dir, "tmp"
+
 set :css_dir, 'css'
 
 set :js_dir, 'js'
