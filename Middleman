@@ -1,0 +1,44 @@
+Middleman
+
+Commands to get Middleman going
+	gem install middleman
+
+run an rbenv rehash
+	this says to look through the system and look for any new commands that haven't been used before
+
+	middleman init <project>
+		to tell middleman there is a project for it here
+		this will make a folder about the project - make sure I am in a place where I want the project to be
+		IF i name the project the name of a folder that already exists - it will populate that folder
+
+	cd <project>
+		get int the project folder
+
+	# fix gemfile
+		if this build properly, ignore this one
+		if it breaks - get more help here
+
+	bundle
+		package manager that looks at the gem file to check if everything is there and up to date
+
+	midleman server
+		start running a page
+
+
+
+
+layout.erb
+	erb = embedded ruby
+
+middleman build creates a folder structure
+
+pros & cons with middleman & Jekle
+
+Jekyll = blogs / github-pages understands it
+		(Middleman has a blog gem & a pages something?)
+
+Middleman init puts all the files together - ned the jem for Jekyll to do that
+
+
+
+

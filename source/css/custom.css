@@ -1,0 +1,33 @@
+#hero h4 {
+  text-shadow: 1px 1px 2px #333;
+  color: white;
+}
+.img-circle {
+  width: 30px;
+  height: 30px;
+}
+.img-resume {
+  margin-top: 0.3em;
+  height: 1.5em;
+}
+h1.header-title {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  letter-spacing: -0.04em;
+}
+#headline h3 {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  letter-spacing: -0.04em;
+  color: #888;
+}
+.footer-in a {
+  text-decoration: underline;
+}
+.portfolio-item {
+  height: 410px;
+  border-bottom:4px solid #ededed;
+  margin-bottom: 20px;
+}

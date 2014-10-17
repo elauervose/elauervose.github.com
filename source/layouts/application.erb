@@ -15,7 +15,17 @@
 
   <!-- CSS
   ================================================== -->
-  <link rel="stylesheet" href="css/style.css" type="text/css"  media="all">
+  <link rel="stylesheet" type="text/css" href="/css/color-skins.css">
+  <link rel="stylesheet" type="text/css" href="/css/base.css">
+  <link rel="stylesheet" type="text/css" href="/css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="/css/prettyPhoto.css">
+  <link rel="stylesheet" type="text/css" href="/layerslider/css/layerslider.css">
+  <link rel="stylesheet" type="text/css" href="/css/slide1.css">
+  <link rel="stylesheet" type="text/css" href="/css/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="/css/blox.css">
+  <link rel="stylesheet" type="text/css" href="/css/icomoon.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/custom.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900|Roboto|Roboto+Slab:300,400' rel='stylesheet' type='text/css'>
 
   <!-- JS
@@ -40,15 +50,19 @@
     <div class="top-bar">
       <div class="container">
         <!-- <div class="top-links"> <a href="#">Form</a> | <a href="#">Terms</a> | <a href="#">Contact</a></div> -->
-        <div class="socailfollow">
-          <a href="http://www.linkedin.com/profile/view?id=69116290&trk=nav_responsive_tab_profile">
-            <img class="img-circle" data-src="js/holder.js/30x30" alt="30x30" style="width: 30px; height: 30px; padding-right: 8px;" src="img/linkedin.jpg"></a>
+        <div class="socialfollow">
+          <a href="www.linkedin.com/in/elauervose/">
+            <img class="img-circle" data-src="js/holder.js/30x30" alt="30x30" src="img/linkedin.jpg">
+          </a>
           <a href="https://twitter.com/ELauerVose">
-            <img class="img-circle" data-src="js/holder.js/30x30" alt="30x30" style="width: 30px; height: 30px; padding-left: 3px;" src="img/twitter.png">
+            <img class="img-circle" data-src="js/holder.js/30x30" alt="30x30" src="img/twitter.png">
           </a>
           <a href="https://github.com/elauervose">
-            <img class="img-circle" data-src="js/holder.js/30x30" alt="30x30" style="width: 30px; height: 30px; padding-left: 6px;" src="img/github.png"></a>
-            <a href="img/erica_lauer_vose_resume.pdf" target="_blank" alt="Resume"><img style=" height: 17px; padding: 8px 5px 8px 8px;" src="img/resume.png"></a>
+            <img class="img-circle" data-src="js/holder.js/30x30" alt="30x30" src="img/github.png">
+          </a>
+          <a href="img/erica_lauer_vose_resume.pdf" target="_blank" alt="Resume">
+            <img class="img-resume" src="img/resume.png">
+          </a>
         </div>
       </div>
     </div>
@@ -57,7 +71,7 @@
       <header id="header">
         <div  class="container">
           <div class="four columns logo">
-            <a href="index.html"><h2>Erica Lauer Vose</h2></a>
+            <a href="index.html"><h1 class="header-title">Erica Lauer Vose</h1></a>
           </div>
           <nav id="nav-wrap" class="nav-wrap1 twelve columns">
             <!-- <div id="search-form">
@@ -66,13 +80,13 @@
               </form>
             </div> -->
             <ul id="nav">
-              <li class="current">
+              <li <%= active?('index') %>>
                 <a href="index.html">Home</a>
               </li>
-              <li>
-                <a  href="/about.html">About</a>
+              <li <%= active?('about') %>>
+                <a href="/about.html">About</a>
               </li>
-              <li>
+              <li <%= active?('projects') %>>
                 <a href="/projects.html">Portfolio</a>
               </li>
             </ul>
@@ -92,11 +106,27 @@
       <footer id="footer">
         <section class="container footer-in">
           <div class="one-third column contact-inf">
-            <h4 class="subtitle">Contact Information</h4>
+            <h4 class="subtitle">Contact Me</h4>
             <br />
-            <p><strong>Address: </strong> 2733 SE Taylor St. Portland OR, 97214</p>
-            <p><strong>Phone: </strong> (503) 432-1718 </p>
-            <p><strong>Email: </strong> elauervose@gmail.com </p>
+            <p>
+              <strong>Address:</strong> 814 SE 27th Ave. Portland OR, 97214
+            </p>
+            <p>
+              <strong>Phone:</strong> <a href="phone:5034321718">(503) 432-1718</a>
+            </p>
+            <p>
+              <strong>Email:</strong> <a href="mailto:elauervose@gmail.com">elauervose@gmail.com</a>
+            </p>
+          </div>
+          <div class="one-third column">
+          &nbsp;
+          </div>
+          <div class="one-third column contact-inf">
+            <h4 class="subtitle">Find Me</h4>
+            <p><a href="www.linkedin.com/in/elauervose/"><img class="img-circle" data-src="js/holder.js/30x30" alt="30x30" src="img/linkedin2.png"> <span style="margin-left:10px; line-height: 2.5em;">LinkedIn</span></a></p>
+            <p><a href="https://twitter.com/ELauerVose"><img class="img-circle" data-src="js/holder.js/30x30" alt="30x30" src="img/twitter2.png"> <span style="margin-left:10px; line-height: 2.5em;">Twitter</span></a></p>
+            <p><a href="https://github.com/elauervose"><img class="img-circle" data-src="js/holder.js/30x30" alt="30x30" src="img/github2.png"><span style="margin-left:10px; line-height: 2.5em;">Github</span></a></p>
+            <p><a href="/img/erica_lauer_vose_resume.pdf" target="_blank" alt="Resume"><img class="img-circle" data-src="js/holder.js/30x30" alt="30x30" src="img/resume-icon.png"><span style="margin-left:10px; line-height: 2.5em;">Resume</span></a></p>
           </div>
           <!-- end-contact-info /end -->
         </section>
