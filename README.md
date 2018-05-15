@@ -1,4 +1,12 @@
-elauervose.github.com
-=====================
+# Portfolio project
+_This site URL: http://erica.lauervose.com/_
 
-Portfolio project
+
+## Local development
+
+```
+
+# Start the app (each time)
+bundle exec middleman build
+
+```
