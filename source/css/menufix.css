@@ -8,61 +8,60 @@
 	#nav a:hover, #nav ul li, .nav-wrap2 #nav ul li, .nav-wrap2.darknavi #nav ul li, .nav-wrap2.mn4 #nav ul li, .nav-wrap2.mn4.darknavi #nav ul li { border:0 none; }
 	.nav-wrap2.mn4 #nav li:last-of-type, .nav-wrap2.mn4.darknavi #nav li:last-of-type { border-right:0 none; }
 	#nav a span, #nav a:after { display:none; visibility:hidden; }
-	
-	
-	
-	
+
+
+
+
 	/* dropdown */
 	#nav ul { width: auto; margin:0; box-shadow: none; display: none; border: none;  }
 	#nav:not( :target ) > a:first-of-type, #nav:target > a:last-of-type { display: block; }
 	#nav:target > ul { display:block;}
-	#nav li ul { position: static; margin:0; width: auto; padding-left:20px; }	
+	#nav li ul { position: static; margin:0; width: auto; padding-left:20px; }
 	#nav li.submenux:after {content: "\e3b1"; }
-	
-
-			#nav
-			{
-				position: relative;
-
-			}
-				#nav > a
-				{
-
-					text-indent: -9999px;
-
-					position: relative;
-				}
 
 
+	#nav
+	{
+		position: relative;
 
-				#nav:not( :target ) > a:first-of-type,
-				#nav:target > a:last-of-type
-				{
-					display: block;
-				}
+	}
+		#nav > a
+		{
 
+			text-indent: -9999px;
 
-			/* first level */
-
-			#nav > ul
-			{
-				display: none;
-				position: absolute;
-
-			}
-				#nav:target > ul
-				{
-					display: block;
-				}
+			position: relative;
+		}
 
 
 
-				/* second level */
+		#nav:not( :target ) > a:first-of-type,
+		#nav:target > a:last-of-type
+		{
+			display: block;
+		}
 
-				#nav li ul
-				{
-					position: static;
 
-				}
+	/* first level */
+
+	#nav > ul
+	{
+		display: none;
+		position: absolute;
+
+	}
+		#nav:target > ul
+		{
+			display: block;
+		}
+
+
+
+		/* second level */
+
+		#nav li ul
+		{
+			position: static;
+
 		}
 
