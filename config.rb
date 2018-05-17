@@ -5,6 +5,12 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# Use “pretty” URLs (without the `.html` suffix)
+activate :directory_indexes
+
+# Append hashes to compiled assets
+activate :asset_hash
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -54,3 +60,4 @@ helpers do
     end
   end
 end
+
