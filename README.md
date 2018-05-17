@@ -1,7 +1,6 @@
 # Portfolio project
 
-_This project URL: http://erica.lauervose.com/_
-
+_This site URL: http://erica.lauervose.com/_
 
 
 ## Local development
@@ -9,5 +8,6 @@ _This project URL: http://erica.lauervose.com/_
 ```
 
 # Start the app (each time)
+
 bundle exec middleman serve
 ```
