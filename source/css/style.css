@@ -356,7 +356,7 @@ ul.our-clients img { max-width:100%;}
 
 /* BLOG */
 
-.sidebar, .rgt-cntt { background:url(../images/brdr-line.png) repeat-y 15px; min-height:160px;}
+/*.sidebar, .rgt-cntt { background:url(../img/brdr-line.png) repeat-y 15px; min-height:160px;}*/
 .sidebar { padding-bottom:40px; }
 .sidebar.leftside { background-position: 245px; padding-right:60px; }
 .sidebar h4.subtitle { border:0 none; color:#54606b; margin-bottom:14px; }
