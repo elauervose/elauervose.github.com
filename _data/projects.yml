@@ -1,0 +1,86 @@
+- title: Artful Starling Websites
+  img: artfulstarling.png
+  date: January, 27th 2020
+  projecturl: http://artfulstarling.com
+  category: Web Development
+  description: This is my freelance web development site. I love helping people figure out how to make their "digital storefront" not only beautiful and unique, but also functional and practical.  I think making your website just right is fun and it should be fun for you too!
+
+
+- title: Down to Earth Dog Lady
+  img: dtedl1.jpg
+  date: January, 27th 2020
+  projecturl: http://artfulstarling.com/dtedl.html
+  category: Web Development
+  description: This website is a new project created for Erin Marion, a dog trainer launching her training business, "The Down to Earth Dog Lady". The project is done in Sinatra a small and flexible open source framework written in Ruby which enabled her site to make API calls to third-party services that enhanced her website and streamlined her business processes.  <br /> This project features a photo gallery using her business's Instagram feed, a newsletter form with Mailchimp, and an online scheduling system with Acuity.
+
+- title: Edify
+  img: edify.png
+  date: January, 27th 2020
+  projecturl: http://artfulstarling.com/edify.html
+  category: Web Development
+  description: This website is a rebranding project created for training consultant Kristen Gallagher, owner of "Edify". The project is done in Jekyll, 'a simple, blog-aware, static site generator'. and features integration with Prose.io to enable Kristen to create, edit, and manage her own website content.
+
+- title: Schouvi Style
+  img: hpic.jpg
+  date: January, 27th 2020
+  projecturl: http://artfulstarling.com/style.html
+  category: Web Development
+  description: This website is a new project created for Schouvi, a hair and makeup artist launching her stylist business, "Schouvi Style". This simple, one-page site utilizes a creative photo gallery theme that highlights her rich, vibrant photography. The project is done in Sinatra a small and flexible open source framework written in Ruby which enabled her site to make API calls to her business's Instagram feed so that virtually all content is dynamically generated using Schouvi's most current work.
+
+- title: The Beach House Recipe Collection
+  img: recipeapp.png
+  date: January, 27th 2020
+  projecturl: https://github.com/elauervose/recipeApp
+  category: Web Development
+  description: This is a fun practice project for learning JavaScript that also happens to be something entirely funtional that I have wished for frequently. This app is intended to help me collect, organize, and access all my favorite recipes which are spread across, books, dropbox folders, phone apps, bookmark links, and random scribbles on scraps of paper attached to my fridge.
+
+- title: Code for Portland
+  img: code_for_portland.png
+  date: January, 27th 2020
+  projecturl: /codeforpdx.html
+  category: Web Development
+  description: My role as one of the Code for Portland organizers was to identify potential partners and work to cultivate lasting partnerships and relationships.  Part of this included helping community and civic leaders understand what Code for Portland is all about and learning what the needs are so we could create projects with lasting, meaningful impact.
+
+- title: New Relic University
+  img: hpic.jpg
+  date: January, 27th 2020
+  projecturl: /nru.html
+  category: Education
+  description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+
+- title: Portland Code School
+  img: masthead_med.png
+  date: January, 27th 2020
+  projecturl: /pcs.html
+  category: Education
+  description: I became co-founder and former director of the Portland Code School, because I believe Portland is an oasis for tech companies and one of the best places to work in the world.  The Portland Code School was designed to be an oasis for learning web development where smart, passionate coders could excel.
+
+
+- title: Oral History; Ethnographic Storytelling
+  img: 
+  date: 
+  projecturl: 
+  category: 
+  description:
+
+- title: 
+  img: 
+  date: 
+  projecturl: 
+  category: 
+  description:
+
+- title: 
+  img: 
+  date: 
+  projecturl: 
+  category: 
+  description:
+    
+- title: 
+  img: 
+  date: 
+  projecturl: 
+  category: 
+  description:
+

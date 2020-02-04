@@ -1,0 +1,41 @@
+<head>
+  <html lang="en">
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Erica Lauer Vose Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" type="text/css" href="/css/color-skins-a0dbedb3.css">
+  <link rel="stylesheet" type="text/css" href="/css/base-81b9841e.css">
+  <link rel="stylesheet" type="text/css" href="/css/skeleton-44ff85fc.css">
+  <link rel="stylesheet" type="text/css" href="/css/prettyPhoto-36fd33f0.css">
+  <link rel="stylesheet" type="text/css" href="/layerslider/css/layerslider-917c49c6.css">
+  <link rel="stylesheet" type="text/css" href="/css/slide1-5c5a11f6.css">
+  <link rel="stylesheet" type="text/css" href="/css/flexslider-5c6dfe44.css">
+  <link rel="stylesheet" type="text/css" href="/css/blox-e6dfbbb2.css">
+  <link rel="stylesheet" type="text/css" href="/css/icomoon-148ada39.css">
+  <link rel="stylesheet" type="text/css" href="/css/style-00690a47.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/custom-ffc564f7.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900|Roboto|Roboto+Slab:300,400' rel='stylesheet' type='text/css'>
+
+  <!-- JS
+  ================================================== -->
+  <script type="text/javascript" src="/js/jquery.min-abcd2ba1.js" ></script>
+  <!--[if lt IE 9]>
+  <script src="/js/modernizr.custom.11889-7f4caf77.js" type="text/javascript"></script>
+  <![endif]-->
+  <!-- HTML5 Shiv events (end)-->
+  <script type="text/javascript" src="/js/nav-resp-b4775063.js"></script>
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="/img/elv_favicon-8238b47c.jpg">
+
+</head>

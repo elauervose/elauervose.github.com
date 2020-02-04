@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+
+{% for project in site.data.projects %}
+<div class="post-snippet mb64">
+  <a href="{{ project.projecturl }}" target="_blank" >
+    <img class="mb24" alt="Post Image" src="img/{{ project.img }}" />
+  </a>
+  <div class="post-title">
+    <a href="{{ project.projecturl }}" target="_blank" >
+      <h4 class="inline-block">{{ project.title }}</h4>
+    </a>
+  </div>
+  <ul class="post-meta">
+    <!-- <li>
+      <i class="ti-calendar"></i>
+      <span>Date: 
+        <span>{{ project.date }}</span>
+      </span>
+    </li> -->
+    <li>
+      <i class="ti-tag"></i>
+      <span>Category: 
+        <a href="#">{{ project.category }}</a>
+      </span>
+    </li>
+  </ul>
+  <hr>
+  <p> {{ project.description }}</p>
+  <a class="btn btn-sm" href="{{ project.projecturl }} " target="_blank">Go to project >></a>
+</div>
+<!--end of post snippet-->
+{% endfor %}
+ 
+      
+
+
